@@ -29,8 +29,8 @@ body {
 
 main {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 98vw;
+    height: 98vh;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
@@ -38,7 +38,7 @@ main {
 
 #card {
     width: 365px;
-    height: 375px;
+    height: 370px;
     background-color: white; 
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -80,6 +80,7 @@ main {
 }
 
 h1 {
+    font-size: 2em;
     margin-top: .4em;
 }
 
@@ -96,20 +97,24 @@ p {
 }
 
 .new-price {
+    position: relative;
     color: var(--Dark-cyan);
     font-size: 2em;
 }
 
 .old-price {
+    position: absolute;
     font-family: var(--font-m);
     color: var(--Dark-grayish-blue);
     font-size: .9em;
     text-decoration: line-through;
     margin-left: 1em;
+    transform: translateY(50%);
 
 }
 
 button {
+    position: relative;
     background-color: var(--Dark-cyan);
     color: var(--White);
     font-family: var(--font-m);
@@ -128,7 +133,11 @@ button:hover {
 }
 
 .material-symbols-outlined {
+    position: absolute;
     text-align: center;
+    transform: translateX(-95%);
+    left: 32%;
+
 }
 footer {
     margin-top: -5px;
