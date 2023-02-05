@@ -37,6 +37,7 @@ main {
 }
 
 #card {
+    position: relative;
     width: 365px;
     height: 370px;
     background-color: white; 
@@ -59,8 +60,8 @@ main {
 
 .img-desktop {
     display: none;
-    width: 365px;
-    height: 423px;
+    width: 290px;
+    height: 455px;
     background-image: url(../images/image-product-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,14 +70,18 @@ main {
 }
 
 .card-content {
-    margin: 1.5em;
+    margin: 3em 1.9em;
 }
 
 .product {
+    position: absolute;
     font-family: var(--font-m);
     color: var(--Dark-grayish-blue);
-    letter-spacing: .4em;
-    font-size: 13px;
+    letter-spacing: .5em;
+    font-size: 12px;
+    top: 6%;
+    left: 9%;
+    
 }
 
 h1 {
@@ -86,7 +91,7 @@ h1 {
 
 p {
     font-family: var(--font-m);
-    font-size: 1em;
+    font-size: .9em;
     color: var(--Dark-grayish-blue);
     margin-top: 1em;
     
@@ -114,7 +119,8 @@ p {
 }
 
 button {
-    position: relative;
+    display: flex;
+    justify-content: center;
     background-color: var(--Dark-cyan);
     color: var(--White);
     font-family: var(--font-m);
@@ -123,7 +129,9 @@ button {
     border: none;
     width: 100%;
     padding: 15px;
-    font-size: 17px;
+    margin-top: 1.5em;
+    font-size: 15px;
+    gap: 15px;
     cursor: pointer;
 
 }
@@ -132,13 +140,6 @@ button:hover {
     background-color: var(--Very-dark-blue);
 }
 
-.material-symbols-outlined {
-    position: absolute;
-    text-align: center;
-    transform: translateX(-95%);
-    left: 32%;
-
-}
 footer {
     margin-top: -5px;
     font-size: 11px;
