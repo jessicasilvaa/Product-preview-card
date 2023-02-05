@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot-desktop (1)](https://user-images.githubusercontent.com/75954474/216795749-74c6cdc4-2a61-425d-a1c6-8f2edf4faa02.jpg)
+![screenshot-desktop](https://user-images.githubusercontent.com/75954474/216798580-dca77d5a-5e68-427c-8105-a63bfd9e6765.jpg)
 ![screenshot-mobile (1)](https://user-images.githubusercontent.com/75954474/216795837-8b7b4d7e-e5c5-40c6-8868-3f9fac352abc.png)
 
 ### Links
