@@ -1,12 +1,13 @@
 @media screen and (min-width: 992px) and (max-width: 1440px) {
 
     main {
-        flex-direction: row;   
+        flex-direction: row;
     }
- 
+
     .card-content {
         padding: 10px 20px 5px 5px;
     }
+
     .img-mobile {
         display: none;
 
