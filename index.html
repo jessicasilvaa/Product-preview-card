@@ -4,43 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Favicon-->
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!--Style-->
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/media.css">
 
   <title>Frontend Mentor | Product preview card component</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
   <main>
-    <section id="img">
-      <div class="img-mobile"></div>
-      <div class="img-desktop"></div>
-    </section>
-
-    <section id="card">
-      <span class="product">PERFUME</span>
+    <article class="card">
+      <picture>
+        <source srcset="images/image-product-desktop.jpg" media="(min-width: 600px)">
+        <img src="images/image-product-mobile.jpg"
+          alt="Gabrielle Essense perfume bottle laying flat on a table with green leaves above and below it">
+      </picture>
       <div class="card-content">
-        <h1>Gabrielle Essence Eau De Parfume</h1>
-        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
-          CHANEL.</p>
+        <p class="product">Perfume</p>
+        <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
+          CHANEL.
+        </p>
         <div class="price-tag">
-          <span class="new-price">$149.99</span>
-          <span class="old-price">$169.99</span>
+          <p class="new-price"><span class="visually-hidden">New price</span>$149.99</p>
+          <del>
+            <p class="old-price"><span class="visually-hidden">Old price</span>$169.99</p>
+          </del>
         </div>
-        <button>
-          <span class="icon"><img src="images/icon-cart.svg"></span>Add to Cart</button>
+        <button class="button">
+          <img src="images/icon-cart.svg" alt="icon-cart">Add to Cart
+        </button>
       </div>
-    </section>
+    </article>
   </main>
-
-  <footer>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/jessicasilvaa" target="_blank">Ana Jessica</a>.
-  </footer>
 </body>
 
 </html>

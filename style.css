@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+:root {
+    /*Colors*/
+    --primary: hsl(158, 36%, 37%);
+    --secondary: hsl(30, 38%, 92%);
+    --neutral-900: hsl(212, 21%, 14%);
+    --neutral-500: hsl(228, 12%, 48%);
+    --neutral-300: hsl(0, 0%, 100%);
+    --btn-hover: hsl(158, 36%, 20%);
+
+    /*FONTS*/
+    --font-m: "Montserrat";
+    --font-f: "Fraunces";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: var(--secondary);
+    color: var(--neutral-500);
+    font-family: var(--font-m);
+    font-size: .9em;
+    font-weight: 500;
+    line-height: 1em;
+    margin: 1em;
+    min-height: 100vh;
+    line-height: 1;
+}
+
+.card {
+    display: grid;
+    background-color: var(--neutral-300);
+    border-radius: .5em;
+    overflow: hidden;
+    max-width: 600px;
+    height: 100%;
+}
+
+img,
+picture,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+.card-content {
+    display: grid;
+    line-height: 1.5em;
+    padding: 1.5em;
+    gap: 1em;
+}
+
+.product {
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+}
+
+.title {
+    font-family: var(--font-f);
+    font-size: 2em;
+    color: var(--neutral-900);
+    line-height: 1;
+}
+
+.price-tag {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.new-price {
+    font-family: var(--font-f);
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    font-family: var(--font-m);
+    font-weight: 700;
+    background-color: var(--primary);
+    color: var(--neutral-300);
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--btn-hover);
+}
+
+
+@media (min-width: 600px) {
+    .card {
+        grid-template-columns: .9fr .9fr;
+        width: 95%;
+    }
+
+    .card-content {
+        margin-bottom: 1em;
+    }
+
+    .product {
+        font-size: .9em;
+        margin-top: .3em;
+    }
+
+    .button {
+        padding: .8em;
+        margin-top: .5em;
+    }
+
+}
